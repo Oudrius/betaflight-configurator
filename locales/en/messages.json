@@ -6959,9 +6959,13 @@
         "message": "Label",
         "description": "Text of one of the fields of the VTX Table element in the VTX tab"
     },
+    "vtxTablePowerLevelsBind": {
+        "message": "Bind",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
     "vtxTableBands": {
         "message": "Number of bands",
-        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+        "description": "Text of one of the fields of the VTX Table power level bind in the VTX tab"
     },
     "vtxTableBandsHelp": {
         "message": "This defines the number of bands required for the VTX",

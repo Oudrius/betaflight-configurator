@@ -444,6 +444,17 @@ vtx.initialize = function (callback) {
                 powerLabelsRowEle.append(newPowerLabelsEle);
             }
             powerLabelsRowEle.append(`<td><span>${i18n.getMessage("vtxTablePowerLevelsLabel")}</span></td>`);
+
+            // Power level binds
+            const powerLevelBindsRowEle = $(".vtx_table_powerlevels_table .vtx_table_powerlevels_bind");
+
+            const powerLevelBindsEle = $("#tab-vtx-templates #tab-vtx-powerlevel-binds td");
+            for (let i = 1; i <= TABS.vtx.MAX_POWERLEVEL_VALUES; i++) {
+                const newPowerLevelBindsEle = powerLevelBindsEle.clone();
+                $(newPowerLevelBindsEle).find("input").attr("id", `vtx_table_powerlabels_${i}`);
+                powerLevelBindsRowEle.append(newPowerLevelBindsEle);
+            }
+            powerLevelBindsRowEle.append(`<td><span>${i18n.getMessage("vtxTablePowerLevelsBind")}</span></td>`);
         }
 
         function loadBandsChannelsTemplate() {

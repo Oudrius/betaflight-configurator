@@ -54,6 +54,7 @@ auxiliary.initialize = function (callback) {
         const newMode = modeTemplate.clone();
 
         let modeName = FC.AUX_CONFIG[modeIndex];
+        console.log(modeName);
         // Adjust the name of the box if a peripheral is selected
         const modeNameAjusted = adjustBoxNameIfPeripheralWithModeID(modeId, modeName);
         // Camlize modeName
